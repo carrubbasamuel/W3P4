@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    overflow: hidden;
+}
+
+.jumbo-img{
+    border-radius: 20px;
+}
+
+div#summer div.card div img{
+    height: 110px;
+}
+
+
+div.jumbotron{
+    background-image: url(asset/jumbotron-img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 110% 100%;
+}
+
+div.jumbotron::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.278);
+}
+
+@media screen and (max-width: 400px){
+    div.jumbotron{
+        background-size: 200% 100%;
+    }
+}
+
+#sale svg{
+    position: absolute;
+    top: 20px;
+    color: black;
+    transform: rotate(100deg);
+    transform-origin: top left;
+    animation: rot 1s infinite linear;
+}
+#sale svg path{
+    fill: rgba(255, 0, 0, 0.769);
+}
+
+
+
+
+
+
+#summer svg{
+    position: relative;
+    left: 10px;
+    top: 0;
+    color: black;
+    transform-origin: center;
+    animation: rot 1s infinite linear;
+}
+#summer svg circle{
+    fill: rgb(255, 255, 0);
+}
+
+
+@keyframes rot{
+    0%{
+        transform: rotate(100deg);
+    }
+    50%{
+        transform: rotate(110deg);
+    }
+    100%{
+        transform: rotate(100deg);
+    }
+}
+
+
+#daysale div.card-body{
+    flex-basis: 33%;
+}
+
+@media screen and (max-width: 400px) {
+    #daysale{
+        display: none;
+    }
+    
+}
+#summer .card .position-relative {
+    overflow: hidden;
+  }
+  #summer .card .position-relative .overlay {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 1;
+  }
+  #summer .card:hover .overlay {
+    opacity: 1;
+  }
+
+
+#last img{
+    height: 250px;
+}
+
+.sconto{
+    position: absolute;
+    top: 20px;
+    left: -20px;
+    z-index: 3;
+    background-color: red;
+    border-radius: 50px;
+    width: 70px;
+    height: 30px;
+    border: 2px solid black;
+}
+
+
+svg#time{
+position: relative;
+top: -5px;
+width: 30px;
+height: 30px;
+transform-origin: center;
+animation: time 1s infinite linear;
+}
+
+svg#time path {
+fill: sandybrown;
+stroke: rgb(241, 221, 140);
+}
+
+@keyframes time{
+0%{
+    transform: rotate(10deg);
+
+}
+50%{
+    transform: rotate(0deg);
+}
+75%{
+    transform: rotate(10deg);
+}
+100%{
+    transform: rotate(0deg);
+}
+
+}
+
+.testimonial{
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.199);
+}
+
+.testimonial .testimonial-text{
+  padding: 20px;
+}
+
+.testimonial .testimonial-author{
+    padding: 5px 20px;
+    border-radius: 0 0 20px 20px;
+    background-color: rgba(0, 0, 0, 0.123);
+}

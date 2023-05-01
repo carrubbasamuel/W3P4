@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <!-- AOS for animation card -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img width="100" src="asset/Progetto_senza_titolo-removebg-preview.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#sale">Offerte</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#last">Last minute</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#summer">Ready for summer?</a>
+          </li>
+          
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-info text-light" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Jumbotron -->
+  <div class="container" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-10">
+            <div class="jumbotron jumbotron-fluid p-4 p-md-5 position-relative shadow-lg rounded m-2 m-md-5">
+              <div class="position-relative">
+                  <h1 class="display-3 text-light fw-bold">Pianifica la tua prossima avventura!</h1>
+                  <p class="lead text-light fw-bold">Vieni a scoprire le destinazioni più belle del mondo con la nostra agenzia di viaggi.</p>
+                  <hr class="my-4 text-light">
+                  <p class="text-light">Inizia a sognare la tua prossima meta e lasciati guidare dalla nostra esperienza. Scopri pacchetti speciali e offerte imperdibili.</p>
+                  <p class="lead text-light">
+                  <a class="btn btn-info btn-lg text-light" href="#" role="button">Scopri le nostre offerte</a>
+                  </p>
+              </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+
+  <!-- Card - Offerte della settimana -->
+
+  <div id="sale" class="container mt-5">
+    <div class="container mb-3 text-center" data-aos="fade-left" data-aos-duration="1000">
+      <h1 class="display-4 text-info fw-bold position-relative"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>Offerte della settimana 
+        <button  class="btn btn-link toggle-btn">
+          <i class="bi bi-arrow-down-short"></i>
+        </button>
+      </h1>
+    </div>
+    <div class="row g-3 toogle-content">
+        <div class="col-6 col-md-4 col-lg-3"  data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine">
+
+            <div class="card">
+                <img src="asset/barcellona.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+
+        </div>
+        <div class="col-6 col-md-4 col-lg-3"  data-aos="fade-down"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine">
+
+            <div class="card">
+                <img src="asset/parigi.jfif" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+
+        </div>
+        <div class="col-6 col-md-4 col-lg-3"  data-aos="fade-up"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine">
+
+            <div class="card">
+                <img src="asset/roma.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+
+        </div>
+        <div class="col-6 col-md-4 col-lg-3"  data-aos="fade-left"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine">
+
+            <div class="card">
+                <img src="asset/tokyo.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+
+        </div>
+    </div>
+  </div>
+
+        
+
+  <!-- Card - Welcome Sunmmer -->
+  <div id="summer" class="container mt-3">
+    <div class="container mb-3 text-center" data-aos="fade-left" data-aos-duration="1000">
+      <h1 class="display-4 text-info fw-bold">
+        Welcome Summer!<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+        <button  class="btn btn-link toggle-btn">
+          <i class="bi bi-arrow-down-short"></i>
+        </button>
+      </h1>
+    </div>
+    <div class="row g-3 align-items-stretch toogle-content">
+      <div class="col-6 col-md-4 col-lg-2" data-aos="fade-left" data-aos-duration="1000">
+      
+        <div class="card shadow-lg" >
+          <div class="position-relative">
+            <div class="overlay"></div>
+            <img src="asset/ortigia.jpg" class="card-img-top" alt="...">
+          </div>
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2" data-aos="fade-left" data-aos-duration="1000">
+
+        <div class="card shadow-lg" >
+          <div class="position-relative">
+            <div class="overlay"></div>
+            <img src="asset/californi.jpg" class="card-img-top" alt="...">
+          </div>
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2" data-aos="fade-left" data-aos-duration="1000">
+
+        <div class="card shadow-lg" >
+          <div class="position-relative">
+            <div class="overlay"></div>
+            <img src="asset/venezia.jpg" class="card-img-top" alt="...">
+          </div>
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2" data-aos="fade-left" data-aos-duration="1000">
+
+        <div class="card shadow-lg" >
+          <div class="position-relative">
+            <div class="overlay"></div>
+            <img src="asset/newyork.jpg" class="card-img-top" alt="...">
+          </div>
+          
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2" data-aos="fade-left" data-aos-duration="1000">
+
+        <div class="card shadow-lg" >
+          <div class="position-relative">
+            <div class="overlay"></div>
+            <img src="asset/santorini.jpg" class="card-img-top" alt="...">
+          </div>
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2" data-aos="fade-left" data-aos-duration="1000">
+
+        <div class="card shadow-lg" >
+          <div class="position-relative">
+             <div class="overlay"></div>
+            <img src="asset/tenerife.jpg" class="card-img-top" alt="...">
+          </div>
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Offerte del giorno -->
+  <div id="daysale" class="container mt-5">
+    <div class="container mb-3 text-center" data-aos="fade-left" data-aos-duration="1000">
+      <h1 class="display-4 text-info fw-bold">Offerta del giorno!
+        <button class="btn btn-link toggle-btn">
+          <i class="bi bi-arrow-down-short"></i>
+        </button>
+      </h1>
+    </div>
+    <div class="card mb-3 d-flex flex-row toogle-content" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+      <img src="asset/milan.jpg" class="card-img-top" alt="Milano">
+      <div class="card-body">
+        <h5 class="card-title">Milano</h5>
+        <p class="card-text">Milano is a city in northern Italy, capital of Lombardy, and the second-most populous city in Italy after Rome. It is known for its fashion, design, and finance industries, as well as for its famous landmarks such as the Duomo di Milano and the Teatro alla Scala.</p>
+        <p class="card-text">Price: €100 per person</p>
+        <button class="btn btn-info text-light">Sell</button>
+        <p class="card-text">Date: June 1, 2023</p>
+      </div>
+    </div>
+  </div>
+  
+
+  <!-- Last minute -->
+  <div id="last" class="container mt-5 p-4" data-aos="fade-left">
+    
+    <div class="row justify-content-center">
+      <div class="container mb-3 text-center">
+        <h1 class="display-4 text-info fw-bold">
+          <svg id="time" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hourglass-split" viewBox="0 0 16 16">
+            <path d="M2.5 15a.5.5 0 1 1 0-1h1v-1a4.5 4.5 0 0 1 2.557-4.06c.29-.139.443-.377.443-.59v-.7c0-.213-.154-.451-.443-.59A4.5 4.5 0 0 1 3.5 3V2h-1a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-1v1a4.5 4.5 0 0 1-2.557 4.06c-.29.139-.443.377-.443.59v.7c0 .213.154.451.443.59A4.5 4.5 0 0 1 12.5 13v1h1a.5.5 0 0 1 0 1h-11zm2-13v1c0 .537.12 1.045.337 1.5h6.326c.216-.455.337-.963.337-1.5V2h-7zm3 6.35c0 .701-.478 1.236-1.011 1.492A3.5 3.5 0 0 0 4.5 13s.866-1.299 3-1.48V8.35zm1 0v3.17c2.134.181 3 1.48 3 1.48a3.5 3.5 0 0 0-1.989-3.158C8.978 9.586 8.5 9.052 8.5 8.351z"/>
+          </svg>
+          Last minute
+          <button  class="btn btn-link toggle-btn">
+            <i class="bi bi-arrow-down-short"></i>
+          </button>
+        </h1>
+      </div>
+      
+      <div class="col-12 col-md-4  toogle-content">
+        
+        <div id="carouselExampleAutoplaying" class="carousel slide " data-bs-ride="carousel">
+          <div class="sconto text-center text-light fw-bold">-50%</div>
+          <div class="carousel-inner shadow-lg">
+            
+            <div class="carousel-item  active">
+              <div class="card">
+                <img src="asset/amsterdam.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-info">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item ">
+              <div class="card">
+                <img src="asset/ibiza.jfif" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-info">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item ">
+              <div class="card">
+                <img src="asset/nizza.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-info">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Testimonial -->
+  <section id="testimonial" class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto text-center">
+          <h2 class="mb-5 text-info fw-bold">Cosa ne pensano i nostri clienti... 
+            <button class="btn btn-link toggle-btn">
+              <i class="bi bi-arrow-down-short"></i>
+            </button>
+          </h2>
+        </div>
+      </div>
+      <div class="row toogle-content">
+        <div class="col-lg-4 mb-5">
+          <div class="testimonial shadow-sm">
+            <p class="testimonial-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean id urna vitae ipsum semper volutpat. Praesent a dolor et nunc egestas auctor."</p>
+            <div class="testimonial-author">
+              <h5 class="mb-0">John Smith</h5>
+              <p class="mb-0">Happy Customer<i class="bi bi-emoji-smile m-2 text-success"></i></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-5">
+          <div class="testimonial  shadow-sm">
+            <p class="testimonial-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean id urna vitae ipsum semper volutpat. Praesent a dolor et nunc egestas auctor."</p>
+            <div class="testimonial-author">
+              <h5 class="mb-0">Jane Doe</h5>
+              <p class="mb-0">Neutral Customer<i class="bi bi-emoji-neutral m-2 text-warning"></i></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-5">
+          <div class="testimonial  shadow-sm">
+            <p class="testimonial-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean id urna vitae ipsum semper volutpat. Praesent a dolor et nunc egestas auctor."</p>
+            <div class="testimonial-author">
+              <h5 class="mb-0">Bob Johnson</h5>
+              <p class="mb-0">Angry Customer<i class="bi bi-emoji-frown m-2 text-danger"></i></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">How i can help you?</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">Recipient:</label>
+              <input type="text" class="form-control" id="recipient-name" placeholder="example@example.com">
+            </div>
+            <div class="mb-3">
+              <label for="message-text" class="col-form-label">Message:</label>
+              <textarea class="form-control" id="message-text" placeholder="Send a message"></textarea>
+            </div>
+          </form>
+          <div class="row">
+            <div class="col-4 d-flex justify-content-center"><i class="bi bi-emoji-smile m-2 text-success"></i></div>
+            <div class="col-4 d-flex justify-content-center"><i class="bi bi-emoji-neutral m-2 text-warning"></i></div>
+            <div class="col-4 d-flex justify-content-center"><i class="bi bi-emoji-frown m-2 text-danger"></i></div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-info text-light">Send message</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+
+
+  <footer id="footer" class="bg-light text-center text-lg-start mt-5" data-aos="fade-up">
+  <div class="container p-4">
+    <div class="row">
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <img width="100" src="asset/Progetto_senza_titolo-removebg-preview.png" alt="">
+      </div>
+      <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Social Media</h5>
+
+        <ul class="list-unstyled mb-0">
+          <li>
+            <a href="#!" class="text-dark"><i class="bi bi-facebook"></i></a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark"><i class="bi bi-instagram"></i></a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark"><i class="bi bi-github"></i></a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Contact Us</h5>
+
+        <ul class="list-unstyled mb-0">
+          <li>
+            <a href="#!" class="text-dark"><i class="bi bi-telephone"></i> +1 123-456-7890</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark"><i class="bi bi-envelope"></i> info@example.com</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark"><i class="bi bi-geo-alt"></i> 123 Main St, New York, NY 10001</a>
+          </li>
+          <li>
+            <a class="btn btn-info text-light mt-3" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Contact us</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">About Me</h5>
+
+        <p class="mb-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis molestias. Fugiat
+          pariatur maxime quis culpa corporis vitae repudiandae aliquam voluptatem veniam, est atque cumque eum delectus sint!</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2023 Travel Company
+  </div>
+</footer>
+
+  
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script><!-- AoS -->
+  <script>
+    AOS.init();//inizializzazione
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
