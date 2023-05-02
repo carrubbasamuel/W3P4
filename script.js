@@ -9,10 +9,10 @@ for (let i = 0; i < toggleBtns.length; i++) {
   toggleBtn.addEventListener("click", function() {
     if (isContentVisible) {
       content.style.visibility = "hidden";
-      toggleBtn.innerHTML = '<i class="bi bi-arrow-down-short"></i>';
+      toggleBtn.innerHTML = '<i class="bi bi-arrow-up-short"></i>';
     } else {
       content.style.visibility = "visible";
-      toggleBtn.innerHTML = '<i class="bi bi-arrow-up-short"></i>';
+      toggleBtn.innerHTML = '<i class="bi bi-arrow-down-short"></i>';
     }
     isContentVisible = !isContentVisible;
   });
